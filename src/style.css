@@ -1,0 +1,12 @@
+.title{
+    padding: 50px;
+    background-color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.red{
+    margin: auto;
+    color: red(117,0,0);
+}
+video{
+    padding: 100px;
+}

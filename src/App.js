@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import './style.css';
+import imageInSrc from './imageInSrc.jfif';
+import Video from './video.mp4';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="checkpoint" style={{border:"solid 1px black", maxWidth:"100vw",}}>
+    <h1 className={"title red"}> ybn </h1>
+     
+        <br />
+        <img src={imageInSrc} alt='image in the src folder'/>
+        <br />
+        <img src="/imageInPublic.jfif" alt='image in the public folder'/>
+       <br/>
+       <video width="720" height="500" controls>
+      <source src={Video} type="video/mp4"/>
+      </video>
+         </div>
     </div>
   );
-}
+};
 
 export default App;
